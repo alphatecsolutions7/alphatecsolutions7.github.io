@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en" class="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - AlphaTec Solutions</title>
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- Header -->
+    <header>
+        <div class="container nav-bar">
+            <a href="index.html" class="logo-container">
+                <div class="logo-badge">A7</div>
+                <div class="logo-text">AlphaTec <span>Solutions</span></div>
+            </a>
+            <div class="nav-right">
+                <a href="index.html" class="nav-contact-btn">Home</a>
+                <button class="theme-toggle" id="themeToggleBtn">
+                    <span id="themeIcon">☀️</span> <span id="themeText">Light Mode</span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Contact Form Section -->
+    <section class="container" style="padding: 80px 20px;">
+        <div style="max-width: 600px; margin: 0 auto; background: var(--bg-card); border: 1px solid var(--border-color); padding: 40px; border-radius: 12px;">
+            <h1 style="font-size: 2rem; margin-bottom: 10px; color: var(--primary);">Get in Touch</h1>
+            <p style="color: var(--text-muted); margin-bottom: 30px;">Fill out the form below for repair inquiries or custom PC builds.</p>
+            
+            <form onsubmit="event.preventDefault(); alert('Message sent successfully!');" style="display: flex; flex-direction: column; gap: 20px;">
+                <div>
+                    <label style="display: block; margin-bottom: 8px; font-weight: 500; font-size: 0.9rem;">Your Name</label>
+                    <input type="text" required style="width: 100%; padding: 12px; border-radius: 8px; border: 1px solid var(--border-color); background: var(--bg-main); color: var(--text-main); outline: none;">
+                </div>
+                <div>
+                    <label style="display: block; margin-bottom: 8px; font-weight: 500; font-size: 0.9rem;">Email Address</label>
+                    <input type="email" required style="width: 100%; padding: 12px; border-radius: 8px; border: 1px solid var(--border-color); background: var(--bg-main); color: var(--text-main); outline: none;">
+                </div>
+                <div>
+                    <label style="display: block; margin-bottom: 8px; font-weight: 500; font-size: 0.9rem;">Message / Inquiry</label>
+                    <textarea rows="5" required style="width: 100%; padding: 12px; border-radius: 8px; border: 1px solid var(--border-color); background: var(--bg-main); color: var(--text-main); outline: none;"></textarea>
+                </div>
+                <button type="submit" class="btn-primary" style="border: none; cursor: pointer; text-align: center;">Send Message</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container footer-content">
+            <p>&copy; 2026 AlphaTec Solutions. All rights reserved.</p>
+            <a href="index.html" class="footer-link">Home</a>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
